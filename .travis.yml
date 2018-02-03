@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: rqwwzUKh4W/NQXn/OBKRwOj4Yg/GXjm5YpWVbhxb0ltl2RYgT/7oPLfMMJDLGGYX3tKTNcl4jFvsrK/7abv+Y+sQp4DP9YfwAGB6DOlYQLmLa1nitMErEBwFpTKVsJj1JrZghyy8lTSKrfHrJqVzqWibZ10ueRKoR4tXQNv1dG21N7B2lfvaSGypjWVDeIX0Z2LTTqgnxnaYxVlQqymW9OKOKmiLXSl6ws6NnAhJxOiiY9u7r/iyIRft0TQ9t6xCEnk9g8cT1+AEkH38ZTeobllHb4eGqAGyj28nKdKE/KEzt/ioUfLNNWB8yR0I1QK9udgIXXZIMv/XZi9Nqi1N/Xt7aaa0Zy2hRtnpnYIuosXBr2M708U4KcX1mqb7aeSK6g3CCU9egr0i02f6MpD9OECEukl13PysxuvFMqZV7XNFHqrOyvdDnluadzQo6Y+b4YfoIRMe1mdGIqRwumXaHG8gBUr5zopsvxsu67TCUCi9L80kbQ8rYtvUzWXVokJYHFZhkpIKr/dU8DQMAB+eg2RTF2ChLAFgcL2Vo2xBt3vi8Ml43I/SCJhva3HOSi4yAgM5nf2J9HM3fQU+uKu3u+5F8/LshLSHi9HrxTDWiFNgCyy3kyvqKDx40ps4vQr/t/VYc7IY68of2ODoMbFzjhto5OiiqVYnc+Gy3iub58E=
+  app: murmuring-woodland-48998
+  on:
+    repo: mwpaddock1/node-restaurants-app-mongoose
+    branch: feature/with-tests
