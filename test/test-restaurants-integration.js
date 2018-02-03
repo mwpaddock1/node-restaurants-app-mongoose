@@ -51,6 +51,7 @@ function generateGrade() {
   return {
     date: faker.date.past(),
     grade: grade
+    //grade: 'A'
   };
 }
 
@@ -60,6 +61,7 @@ function generateGrade() {
 function generateRestaurantData() {
   return {
     name: faker.company.companyName(),
+    //name: 'pistones'
     borough: generateBoroughName(),
     cuisine: generateCuisineType(),
     address: {
@@ -68,6 +70,7 @@ function generateRestaurantData() {
       zipcode: faker.address.zipCode()
     },
     grades: [generateGrade(), generateGrade(), generateGrade()]
+    //grades: ['A', 'B', 'C']
   };
 }
 
